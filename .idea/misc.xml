@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Projects/Android/Raheem/jetpackpagingcodelab/app/src/main/res/layout/activity_main.xml" value="0.19010416666666666" />
+        <entry key="..\:/Projects/Android/Raheem/jetpackpagingcodelab/app/src/main/res/drawable/ic_git_branch.xml" value="0.571875" />
+        <entry key="..\:/Projects/Android/Raheem/jetpackpagingcodelab/app/src/main/res/drawable/ic_star.xml" value="0.6535714285714286" />
+        <entry key="..\:/Projects/Android/Raheem/jetpackpagingcodelab/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Projects/Android/Raheem/jetpackpagingcodelab/app/src/main/res/layout/card_repository.xml" value="0.18" />
       </map>
     </option>
   </component>

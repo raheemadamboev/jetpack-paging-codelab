@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="3dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="3dp">
+
+    <TextView
+        android:id="@+id/name_t"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/titleColor"
+        android:textSize="@dimen/repo_name_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="android-architecture" />
+
+    <TextView
+        android:id="@+id/description_t"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="10"
+        android:paddingVertical="@dimen/row_item_margin_vertical"
+        android:textColor="?android:textColorPrimary"
+        android:textSize="@dimen/repo_description_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name_t"
+        tools:text="A collection of samples to discuss and showcase different architectural tools and patterns for Android apps." />
+
+    <TextView
+        android:id="@+id/language_t"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:paddingVertical="@dimen/row_item_margin_vertical"
+        android:text="@string/language"
+        android:textSize="@dimen/repo_description_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/description_t" />
+
+    <ImageView
+        android:id="@+id/star_pic"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/row_item_margin_vertical"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_star"
+        app:layout_constraintBottom_toBottomOf="@+id/star_t"
+        app:layout_constraintEnd_toStartOf="@id/star_t"
+        app:layout_constraintTop_toTopOf="@id/star_t" />
+
+    <TextView
+        android:id="@+id/star_t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/row_item_margin_vertical"
+        android:textSize="@dimen/repo_description_size"
+        app:layout_constraintBaseline_toBaselineOf="@+id/fork_t"
+        app:layout_constraintEnd_toStartOf="@id/fork_pic"
+        tools:text="30" />
+
+    <ImageView
+        android:id="@+id/fork_pic"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/row_item_margin_vertical"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_git_branch"
+        app:layout_constraintBottom_toBottomOf="@id/fork_t"
+        app:layout_constraintEnd_toStartOf="@id/fork_t"
+        app:layout_constraintTop_toTopOf="@id/fork_t" />
+
+    <TextView
+        android:id="@+id/fork_t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/row_item_margin_vertical"
+        android:textSize="@dimen/repo_description_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/description_t"
+        tools:text="30" />
+</androidx.constraintlayout.widget.ConstraintLayout>
